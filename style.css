@@ -3,7 +3,6 @@
     --color-primary: hsl(235, 35%, 19%);
     --color-secondary: hsl(358, 78%, 69%);
     --color-font: hsla(0,0%, 100%, 0.902);
-
     --color-shadow:  hsl(235, 36%, 35%) ;
 }
 
@@ -31,11 +30,21 @@ h1{
     font-size: 30px;
 }
 
-section{
+.display {
     display: flex;
+    justify-content: space-between;  
+    padding: 32px; 
+}
+
+.pomodoro, .tarefa {
+    flex: 1; 
+    max-width: 50%; 
+}
+
+.pomodoro{
+    flex-basis: 50%;
     align-items: center;
     height: 100%;
-
 }
 
 .container{
@@ -60,13 +69,11 @@ section{
     box-shadow: 0px 1px 19px 14px var(--color-shadow);
 }
 
-
 button{
     background: none;
     border: none;
     color: var(--color-secondary);
     cursor: pointer;
-
 }
 
 .tempo{
@@ -104,7 +111,6 @@ button{
     position: relative;
     display: flex;
     flex-direction: row;
-
 }
 
 .tempo p{
